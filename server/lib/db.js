@@ -7,7 +7,7 @@ export const connectDB = async () => {
       console.log('Database Connected')
     );
 
-    await mongoose.connect(`${process.env.URI_DATABASE}/chat-app`);
+    await mongoose.connect(`${process.env.URI_DATABASE}`);
   } catch (error) {
     console.log(error);
   }
